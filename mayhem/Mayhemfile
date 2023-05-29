@@ -1,0 +1,8 @@
+project: xlsx2csv
+target: fuzz-xlsx
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_xlsx.py
+    libfuzzer: true

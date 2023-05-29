@@ -7,7 +7,7 @@ from contextlib import contextmanager
 
 
 with atheris.instrument_imports():
-    from xlsx2csv import Xlsx2csv, InvalidXlsxFileException
+    from xlsx2csv import Xlsx2csv
 
 from xlsx2csv import InvalidXlsxFileException
 
@@ -34,7 +34,7 @@ def TestOneInput(data):
         except InvalidXlsxFileException:
             return -1
         except TypeError:
-            if ctr > 10000:
+            if ctr > 1000:
                 raise
             return -1
 def main():

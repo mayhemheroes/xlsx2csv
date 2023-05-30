@@ -34,7 +34,7 @@ def TestOneInput(data):
         except InvalidXlsxFileException:
             return -1
         except TypeError:
-            if ctr > 5:
+            if ctr > 1:
                 raise
             return -1
 def main():

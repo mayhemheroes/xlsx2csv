@@ -6,3 +6,4 @@ testsuite:
 cmds:
   - cmd: /src/mayhem/fuzz_xlsx.py
     libfuzzer: true
+    timeout: 6

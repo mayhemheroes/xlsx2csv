@@ -33,10 +33,6 @@ def TestOneInput(data):
                 Xlsx2csv(f).convert('/dev/null')
         except InvalidXlsxFileException:
             return -1
-        except TypeError:
-            if ctr > 1000:
-                raise
-            return -1
 def main():
     atheris.Setup(sys.argv, TestOneInput)
     atheris.Fuzz()
